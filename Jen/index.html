@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>A demo of new CSS to accomplish a Masonry-style layout</h1>
+  <h3>Compare Display modes:</h3>
+  <input type="radio" name="display" value="masonry" id="masonry" checked> <label for="masonry">Masonry (Firefox Nightly only, <a href="#note">pref on</a>)</label><br>
+  <input type="radio" name="display" value="grid" id="grid"> <label for="grid">Grid 1 (also the fallback)</label><br>
+  <input type="radio" name="display" value="multicolumn" id="multicolumn"> <label for="multicolumn">Multicolumn</label><br>
+  <input type="radio" name="display" value="flexbox" id="flexbox"> <label for="flexbox">Flexbox (row)</label><br> 
+  <input type="radio" name="display" value="flexbox2" id="flexbox2"> <label for="flexbox2">Flexbox (column)</label>
+  <p>Be sure to <a href="#note">read the note</a> about this demo. Also, I made <a href="https://codepen.io/jensimmons/full/vYNeRZw" target="_blank">another demo</a> that shows off what Masonry in CSS Grid can do — far beyond the JS libraries of today.</p>
+  
+  <main>
+    <figure><figcaption>1</figcaption><img src="https://images.unsplash.com/photo-1587383378486-83d683d9d02d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>2</figcaption><img src="https://images.unsplash.com/photo-1588395856595-235a6a1ccca8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>3</figcaption><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/photo-1587825027984-c4476461c8f9.jpg"></figure>
+    <figure><figcaption>4</figcaption><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/photo-1588503391289-5f7b28258022.jpg"></figure>
+    <figure><figcaption>5</figcaption><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/photo-1586603234056-2158d916b705.jpg"></figure>
+    <figure><figcaption>6</figcaption><img src="https://images.unsplash.com/photo-1587462829651-7fd0208d766e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>7</figcaption><img src="https://images.unsplash.com/photo-1585652505968-6266ecf26133?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>8</figcaption><img src="https://images.unsplash.com/photo-1586450463118-8d0cddab713f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>9</figcaption><img src="https://images.unsplash.com/photo-1587993988198-a3d05e119eb0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>10</figcaption><img src="https://images.unsplash.com/photo-1587750059642-d55dfc265acd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>11</figcaption><img src="https://images.unsplash.com/photo-1586692283466-6e08f395f627?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>12</figcaption><img src="https://images.unsplash.com/photo-1586796105950-b885786d8597?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>13</figcaption><img src="https://images.unsplash.com/photo-1587169544748-d21bd810f57e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>14</figcaption><img src="https://images.unsplash.com/photo-1586943101559-4cdcf86a6f87?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>15</figcaption><img src="https://images.unsplash.com/photo-1586767451503-204b55047cb2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>16</figcaption><img src="https://images.unsplash.com/photo-1586754102101-36b67e4c5bcf?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>17</figcaption><img src="https://images.unsplash.com/photo-1585791022456-be89ddf09c75?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>18</figcaption><img src="https://images.unsplash.com/photo-1587063749684-d4926a4fc233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>19</figcaption><img src="https://images.unsplash.com/photo-1586695940356-4b1c61eabbc7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>20</figcaption><img src="https://images.unsplash.com/photo-1587151711096-23c51f92c920?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>21</figcaption><img src="https://images.unsplash.com/photo-1587068786187-db37681155f8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>22</figcaption><img src="https://images.unsplash.com/photo-1585841960320-f70aa9b7da69?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>23</figcaption><img src="https://images.unsplash.com/photo-1586968099622-45379e907f32?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>24</figcaption><img src="https://images.unsplash.com/photo-1588046883141-44883b3c0f15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+    <figure><figcaption>25</figcaption><img src="https://images.unsplash.com/photo-1587061966530-a50125ba8512?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"></figure>
+  </main>
+  
+  <aside id="note">
+    <h2>About this demo</h2>
+    <p>For years, websites (like <a href="https://www.pinterest.com/">Pinterest</a>) have wanted a certain layout that packs together different-sized cards of content, while allowing a source order where the content runs across the columns. This layout keeps closely-ordered content visually together above the fold, and allows lazy-loading of new content to the bottom of the page. As of early 2020, this layout requires a JavaScript solution, such as the popular <a href="https://masonry.desandro.com/">Masonry</a> library.</p>
+  <p>The CSS Working Group is currently pursuing a way to do this in 100% CSS. Mozilla is proposing one way to do this — and has implemented the idea, so that people can try it out and see what they think. This works in April/May 2020.</p>
+  <p>You can try it in <a href="http://nightly.mozilla.org/">Firefox Nightly</a>. Type <code>about:config</code> in the URL bar. Then search for “masonry”. And set <code>layout.css.grid-template-masonry-value.enabled</code> to true.</p>
+  <p>This is an experimental implementation — being discussed as a <em>possible</em> CSS specification. It is NOT yet official, and likely will change. Do not write blog posts saying this is definitely a thing. It's not a thing. Not yet. It's an experiment. A prototype. If you have thoughts, chime in at <a href="https://github.com/w3c/csswg-drafts/issues/4650">the CSSWG</a>.</p>
+  </aside>
+</body>
+</html>
